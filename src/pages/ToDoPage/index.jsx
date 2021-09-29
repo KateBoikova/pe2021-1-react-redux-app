@@ -36,7 +36,7 @@ function ToDoPage (props) {
   );
 }
 
-const mapStateToProps = state => state.todo;
+const mapStateToProps = state => ({ ...state.todo, ...state.theme });
 const mapDispatchToProps = dispatch => {
   return { changeTheme: () => dispatch(changeThemeAction()) };
 };

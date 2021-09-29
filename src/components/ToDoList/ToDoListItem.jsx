@@ -8,7 +8,7 @@ function ToDoListItem (props) {
   const { id, body, isDone, deleteTask, updateTask } = props;
 
   return (
-    <li key={id} className={styles.task}>
+    <li className={styles.task}>
       <div
         className={classNames(styles.taskItem, {
           [styles.done]: isDone,

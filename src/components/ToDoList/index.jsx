@@ -12,6 +12,7 @@ function ToDoList (props) {
       {tasks.map(task => (
         <ToDoListItem
           {...task}
+          key={task.id}
           updateTask={updateTaskAction}
           deleteTask={deleteTaskAction}
         />

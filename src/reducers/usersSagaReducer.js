@@ -73,7 +73,7 @@ function usersSagaReducer (state = initialState, action) {
         users: newUsers,
       };
     }
-    case ACTION_TYPES.GET_USERS_ERROR: {
+    case ACTION_TYPES.DELETE_USER_ERROR: {
       const { error } = action;
       return {
         ...state,
